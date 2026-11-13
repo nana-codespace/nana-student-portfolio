@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Student Portfolio and Academic Management System</title>
+
+    <!-- CONNECT CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- WEBSITE HEADER -->
+    <header>
+        <h1>Welcome to My Student Portfolio</h1>
+        <p>My Academic Journey in Computer Science</p>
+    </header>
+
+    <!-- NAVIGATION MENU -->
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#about">About Me</a>
+        <a href="#academic">Academics</a>
+        <a href="#skills">My Skills</a>
+        <a href="#projects">My Projects</a>
+        <a href="#courses">Courses</a>
+        <a href="#results">Results</a>
+        <a href="planner.html">Academic Planner</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+
+        <!-- DASHBOARD -->
+        <section id="dashboard">
+
+            <h2>Student Dashboard</h2>
+
+            <img src="images/pICTURE.jpg"
+                 alt="My Profile Photo"
+                 class="profile-photo">
+
+            <h3>Alarape-Are NanaHawau Oluwatunmise</h3>
+
+            <p><strong>Programme:</strong> Computer Science</p>
+            <p><strong>Institution:</strong> Miva Open University</p>
+            <p><strong>Academic Level:</strong> 100 Level</p>
+            <p><strong>Career Goals:</strong> Data Analyst and Data Scientist</p>
+
+            <div class="dashboard-cards">
+
+                <div>
+                    <h3>Course Registration</h3>
+                    <p id="courseCount">0</p>
+                </div>
+
+                <div>
+                    <h3>Current GPA</h3>
+                    <p id="dashboardGPA">0.00</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PERSONAL BIOGRAPHY -->
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <h3>Alarape-Are NanaHawau Oluwatunmise</h3>
+
+            <p>
+                I am a Computer Science student at Miva Open University,
+                currently pursuing my Bachelor's degree.
+            </p>
+
+            <p>
+                I am passionate about technology, innovation, programming
+                and using digital solutions to solve real-world problems.
+                My interest in technology motivates me to continuously
+                develop my knowledge and technical abilities.
+            </p>
+
+            <p>
+                I am currently building my skills in HTML, CSS,
+                JavaScript and Python while exploring different areas
+                of computer science.
+            </p>
+
+            <p>
+                My career aspirations are to become a professional
+                Data Analyst and Data Scientist. I am particularly
+                interested in data analysis, data visualization,
+                statistical techniques and machine learning.
+            </p>
+
+            <p>
+                I consider myself a dedicated learner who is committed
+                to continuous learning, personal development and
+                professional excellence.
+            </p>
+
+            <a href="about.html" class="nav-button">
+                Read More About Me
+            </a>
+
+        </section>
+
+
+        <!-- ACADEMIC INFORMATION -->
+        <section id="academic">
+
+            <h2>Academic Information</h2>
+
+            <table border="1" cellpadding="10" width="100%">
+
+                <tr>
+                    <th>Information</th>
+                    <th>Details</th>
+                </tr>
+
+                <tr>
+                    <td>Full Name</td>
+                    <td>Alarape-Are NanaHawau Oluwatunmise</td>
+                </tr>
+
+                <tr>
+                    <td>Institution</td>
+                    <td>Miva Open University</td>
+                </tr>
+
+                <tr>
+                    <td>Programme</td>
+                    <td>Computer Science</td>
+                </tr>
+
+                <tr>
+                    <td>Academic Level</td>
+                    <td>100 Level</td>
+                </tr>
+
+                <tr>
+                    <td>Qualification</td>
+                    <td>Bachelor's Degree in Progress</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <!-- TECHNICAL SKILLS -->
+        <section id="skills">
+
+            <h2>My Technical Skills</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python Programming</li>
+                <li>Basic Computer Networking</li>
+                <li>Problem Solving</li>
+                <li>Computer Literacy</li>
+            </ul>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section id="projects">
+
+            <h2>My Projects</h2>
+
+            <div>
+                <h3>1. Python Hotel Management System</h3>
+
+                <p>
+                    A Python-based hotel management system that allows
+                    customers to book hotel rooms remotely.
+                </p>
+
+                <p><strong>Technology:</strong> Python</p>
+            </div>
+
+            <div>
+                <h3>2. Student Portfolio Website</h3>
+
+                <p>
+                    A responsive student portfolio website designed
+                    to display academic information, projects and
+                    student activities.
+                </p>
+
+                <p><strong>Technologies:</strong> HTML, CSS and JavaScript</p>
+            </div>
+
+            <div>
+                <h3>3. Basic Python Calculator</h3>
+
+                <p>
+                    A simple calculator developed using Python
+                    to perform basic mathematical operations.
+                </p>
+
+                <p><strong>Technology:</strong> Python</p>
+            </div>
+
+            <a href="projects.html" class="nav-button">
+                View All Projects
+            </a>
+
+        </section>
+
+
+        <!-- COURSE REGISTRATION -->
+        <section id="courses">
+
+            <h2>Course Registration</h2>
+
+            <p>Enter a course you want to register:</p>
+
+            <input
+                type="text"
+                id="courseInput"
+                placeholder="Enter course name">
+
+            <button onclick="addCourse()">
+                Add Course
+            </button>
+
+            <ul id="courseList"></ul>
+
+        </section>
+
+
+        <!-- GPA CALCULATOR -->
+        <section id="results">
+
+            <h2>Academic Results and GPA Calculator</h2>
+
+            <p>Enter your course details below to calculate your GPA.</p>
+
+            <input
+                type="text"
+                id="courseCode"
+                placeholder="Course Code">
+
+            <input
+                type="number"
+                id="creditUnit"
+                placeholder="Credit Unit">
+
+            <select id="grade">
+
+                <option value="">Select Grade</option>
+                <option value="5">A</option>
+                <option value="4">B</option>
+                <option value="3">C</option>
+                <option value="2">D</option>
+                <option value="1">E</option>
+                <option value="0">F</option>
+
+            </select>
+
+            <button onclick="addResult()">
+                Add Result
+            </button>
+
+            <ul id="resultList"></ul>
+
+            <button onclick="calculateGPA()">
+                Calculate GPA
+            </button>
+
+            <h3 id="gpaResult">Your GPA will appear here.</h3>
+
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+
+            <h2>Contact Me</h2>
+
+            <p>
+                Thank you for visiting my student portfolio.
+                Feel free to contact me through my contact page.
+            </p>
+
+            <a href="contact.html" class="nav-button">
+                Contact Me
+            </a>
+
+        </section>
+
+
+        <!-- QUICK NAVIGATION -->
+        <section class="quick-navigation">
+
+            <h2>Explore My Website</h2>
+
+            <p>
+                Use the buttons below to explore my academic portfolio.
+            </p>
+
+            <div class="navigation-buttons">
+
+                <a href="about.html" class="nav-button">About Me</a>
+
+                <a href="projects.html" class="nav-button">My Projects</a>
+
+                <a href="planner.html" class="nav-button">Academic Planner</a>
+
+                <a href="contact.html" class="nav-button">Contact Me</a>
+
+                <a href="#academic" class="nav-button">Academic Information</a>
+
+                <a href="#skills" class="nav-button">My Skills</a>
+
+                <a href="#courses" class="nav-button">Course Registration</a>
+
+                <a href="#results" class="nav-button">My Results</a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            &copy; 2026 Alarape-Are NanaHawau Oluwatunmise.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- CONNECT JAVASCRIPT FILE -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
