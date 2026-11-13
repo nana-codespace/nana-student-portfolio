@@ -1,0 +1,201 @@
+```css
+/* GENERAL WEBSITE STYLING */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+/* WEBSITE HEADER */
+
+header {
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* NAVIGATION MENU */
+
+nav {
+    background-color: #142b46;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f4c542;
+}
+
+/* PROFILE PICTURE */
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 15px auto;
+}
+
+/* WEBSITE SECTIONS */
+
+section {
+    background-color: white;
+    margin: 25px auto;
+    padding: 25px;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #1e3a5f;
+    border-bottom: 2px solid #1e3a5f;
+    padding-bottom: 10px;
+}
+
+section p {
+    line-height: 1.7;
+}
+
+section ul {
+    line-height: 2;
+}
+
+/* IMAGES */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #142b46;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+
+    nav a {
+        display: block;
+        margin: 12px 0;
+    }
+
+    section {
+        width: 85%;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
+
+/* GPA CALCULATOR */
+
+input, select {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f4c542;
+    color: #142b46;
+}
+
+/* ACADEMIC PLANNER TASK LIST */
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#taskList li {
+    background-color: #f0f4f8;
+    color: #222;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#taskList li span {
+    color: #222;
+    font-weight: bold;
+}
+
+#taskList li button {
+    background-color: #142d4e;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* QUICK NAVIGATION BUTTONS */
+
+.navigation-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.nav-button {
+    display: inline-block;
+    background-color: #1e3a5f;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #3498db;
+    transform: translateY(-3px);
+}
